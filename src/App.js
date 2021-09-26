@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { projectData } from './projectData';
 import './App.css';
 
 class App extends Component {
@@ -7,7 +8,11 @@ class App extends Component {
     this.state = {
       programs: []
     }
+  }
 
+  componentDidMount(){
+
+    this.setState({ programs: projectData })
   }
 
   render() {
