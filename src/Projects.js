@@ -2,6 +2,7 @@ import React from 'react';
 import ProjectCard from './ProjectCard';
 
 const Projects = ({ projects }) => {
+  console.log('projects folder', projects)
 
   const projectDisplay = projects.map(project => {
     return (
